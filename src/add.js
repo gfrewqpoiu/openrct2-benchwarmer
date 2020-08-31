@@ -1,9 +1,11 @@
+/// <reference path="openrct2.d.ts" />
+
 function buildOnTile(surface, path) {
   return surface &&
     surface.hasOwnership &&
     path &&
     !path.isQueue &&
-    path.slopeDirection === null;
+    path.slopeDirection === null
 }
 
 export default function Add(bench=null, bin=null) {
